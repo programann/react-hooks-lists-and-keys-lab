@@ -9,9 +9,10 @@ function ProjectList({ projects }) {
       <div id="project-list">
         {projects.map(project=>(
           <ProjectItem 
-          key={project.item}
+          key={project.id}
           name={project.name}
-          />
+          about={project.about}
+          technologies={project.technologies}/>
         ))}
       </div>
     </div>
